@@ -426,6 +426,10 @@ docker rm 容器名称（容器ID）
 
 ## 4.1 MySQL部署
 
+docker登录mysql
+docker exec -it tensquare_mysql mysql -uroot -p123456
+
+
 （1）拉取mysql镜像
 
 ```
