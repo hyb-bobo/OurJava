@@ -427,7 +427,7 @@ docker rm 容器名称（容器ID）
 ## 4.1 MySQL部署
 
 docker登录mysql
-docker exec -it tensquare_mysql mysql -uroot -p123456
+docker exec -it mysql mysql -uroot -p123456
 
 
 （1）拉取mysql镜像
@@ -493,6 +493,8 @@ docker pull redis
 
 ```
 docker run -di --name=myredis -p 6379:6379 redis
+
+docker exec -it CONTAINERID redis-cli
 ```
 
 # 5 迁移与备份
